@@ -669,6 +669,19 @@ There are a number of ember-cli addons that allow you to use Torii with other pr
 
 ## Running the tests locally
 
+### Node Version Requirements
+
+**Important:** This project requires Node.js 10.x to run properly due to Ember CLI 2.18.1 compatibility.
+
+If you're using `nvm`, the project includes a `.nvmrc` file:
+  * `nvm use` (automatically uses Node 10.24.1)
+
+Or manually install and switch to Node 10:
+  * `nvm install 10`
+  * `nvm use 10`
+
+### Setup
+
   * Clone the repo `git clone git@github.com:Vestorly/torii.git`, `cd torii/`
   * `yarn install`
   * `npm test` for tests.
@@ -694,12 +707,12 @@ The `/etc/hosts` equivalent filepath on Windows is:
 For more info, see [Hosts at wikipedia](http://en.wikipedia.org/wiki/Hosts_(file)).
 
   * Clone the repo `git clone git@github.com:Vestorly/torii.git`, `cd torii/`
+  * Ensure you're using Node 10: `nvm use` (or `nvm use 10`)
   * `yarn` or `yarn install`
-  * `ember serve`
 
 Now, start your server and visit the page:
 
-  * `ember serve`
+  * `npm run start` (or `npx ember serve`)
   * open `http://torii-example.com:4200`
 
 ## Security
